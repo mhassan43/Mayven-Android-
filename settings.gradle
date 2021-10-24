@@ -1,0 +1,4 @@
+include ':nativetemplates'
+include ':app'
+include 'libs:PreviewAndroid-master'
+rootProject.name = "Mayven"

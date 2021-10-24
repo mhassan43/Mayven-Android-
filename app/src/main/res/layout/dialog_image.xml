@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+
+                android:layout_toRightOf="@+id/profilePic"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/name"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="50dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/profilePic"
+                android:text="Description"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/achive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/desc"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/dot"
+
+                android:text="1003"
+                android:textColor="@color/gold"
+                android:textSize="15sp"
+                />
+
+            <ImageView
+                android:id="@+id/dot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+
+
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="37dp"
+
+                android:layout_toRightOf="@+id/profilePic"
+                android:layout_below="@+id/desc"
+
+                android:background="@drawable/round_button"/>
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/programName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="12345"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/classOfDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="12345"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/underline"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/lightGrey" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/personalmessage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_baseline_mail_outline_24" />
+            <TextView
+                android:id="@+id/msg_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/personalmessage"
+                android:layout_marginLeft="39dp"
+
+                android:text="Message"/>
+
+
+            <ImageView
+                android:id="@+id/groupadd"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@+id/personalmessage"
+                android:src="@drawable/ic_baseline_people_24" />
+
+            <TextView
+                android:id="@+id/groupadd_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/groupadd"
+
+
+                android:layout_marginLeft="160dp"
+
+                android:text="Add to Group"/>
+
+            <ImageView
+                android:id="@+id/block"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@+id/groupadd"
+                android:src="@drawable/ic_baseline_block_24" />
+
+            <TextView
+                android:id="@+id/block_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/block"
+                android:layout_toRightOf="@+id/personalmessage"
+
+                android:layout_marginLeft="235dp"
+
+                android:text="Block"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
